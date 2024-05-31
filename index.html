@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <div class="top-section">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col s17 m6 l6">
+                    <p class="name-text">{{user.fullName}}</p>
+                </div>
+        
+                <div class="col s17 m6 l6">
+                    <img class="picture1" src="{{user.photo}}" alt="Khanyisani's image">
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s17">
+                <p class="city-name-text">{{city.name}}</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s17 m4">
+                <img class="picture2" src="{{city.photo}}" alt="City picture">
+            </div>
+            <div class="col s17 m8">
+                <p>{{{city.description}}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s17">
+                <p class="city-name-text">{{foreignLanguage.name}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{englishPhrase}}</td>
+                    <td>{{foreignLanguage}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s17">
+                <p class="city-name-text">{{favouriteSubjects.title}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col s17">
+                
+                <div class="contain">
+        
+                    {{#each favouriteSubjects.subjects}}
+                    <div class="box">
+                        <div class="heading">
+                            <p>{{this.name}}</p>
+                        </div>
+                        <img src="{{this.photo}}" alt="favourite-subject's pictures">
+                        <p>{{this.description}}</p>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    
+</body>
+</html>

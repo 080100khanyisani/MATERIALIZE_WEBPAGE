@@ -1,0 +1,73 @@
+.top-section {
+    background-image: url("./table-mountain-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    
+}
+.name-text {
+    font-size: x-large;
+    
+}
+
+.city-name-text {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.picture2 {
+    margin-top: 20px;
+}
+
+.table tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.explain {
+    margin-left: 400px;
+    margin-top: -170px;
+}
+
+.contain{
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    width: 100%;
+    text-align: center;
+}
+
+.heading{
+    font-size: x-large;
+}
+
+
+@media (max-width: 600px) {
+    .name-text{
+        text-align: center;
+    }
+    .picture1{
+        margin-left: 4em;
+    }
+
+    .picture2{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contain{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .top-section{
+        width: 100%;
+    }
+    
+}

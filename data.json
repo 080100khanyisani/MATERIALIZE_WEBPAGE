@@ -1,0 +1,51 @@
+{
+    "user": {
+        "fullName": "Khanyisani Kumalo",
+        "photo": "./khanyisani-kumalo.jpg",
+        "alt": "Khanyisani's image"
+    },
+    "city": {
+        "name": "Durban",
+        "photo": "./durban.jpg",
+        "alt": "City picture",
+        "description": "I'd love to visit Durban for several reasons:<br>Beaches: Durban is famous for its beautiful beaches along the Golden Mile.I'd enjoy relaxing on the sandy shores, soaking up the sun, and perhaps trying out some water sports like surfing or paddleboarding.<br>Culture and History: Durban has a rich cultural heritage, influenced by Zulu traditions and colonial history.<br>Exploring sites like the Durban Botanic Gardens, uShaka Marine World, and the KwaMuhle Museum would be fascinating to learn more about the city's past and present."
+    },
+    "foreignLanguage": {
+        "name": "Foreign Language",
+        "language": "Dutch",
+        "phrases": [
+            {
+                "englishPhrase": "How are you?",
+                "foreignLanguage": "Wie geht es dir?"
+            },
+            {
+                "englishPhrase": "I'm sorry",
+                "foreignLanguage": "Es tut mir leid"
+            },
+            {
+                "englishPhrase": "Goodbye",
+                "foreignLanguage": "Auf Wiedersehen"
+            }
+        ]
+    },
+    "favouriteSubjects": {
+        "title": "Favouraite Subjects",
+        "subjects":[
+            {
+                "name": "Machine Learning and Data Mining",
+                "description": "This field combines statistics, computer science, and mathematics to develop algorithms and models that enable computers to learn from and make predictions or decisions based on data. Machine learning techniques include supervised learning (e.g., classification, regression), unsupervised learning (e.g., clustering, dimensionality reduction), and reinforcement learning. Data mining focuses on discovering patterns, trends, and insights from large datasets, often using techniques such as association rule mining, clustering, and classification.",
+                "photo": "./Machine Learning and Data Mining.jpg"
+            },
+            {
+                "name": "Statistical Modeling and Analysis",
+                "description": "This subject involves using mathematical models and statistical techniques to analyze data, make predictions, and draw conclusions. It includes topics such as regression analysis, time series analysis, hypothesis testing, and data visualization. Statistical modeling is essential in various fields like economics, biology, social sciences, and engineering for decision-making and understanding complex systems.",
+                "photo": "./Optimization Theory and Operations Research.jpg"
+            },
+            {
+                "name": "Optimization Theory and Operations Research",
+                "description": "Optimization theory deals with finding the best solution (optimal) among a set of feasible solutions, considering constraints and objectives. Operations research applies optimization techniques to solve complex decision-making problems in areas like logistics, supply chain management, finance, and healthcare. Topics in this area include linear programming, integer programming, nonlinear optimization, queuing theory, and simulation methods.",
+                "photo": "./Statistical Modeling and Analysis.jpg"
+            }
+        ]
+    }
+}
