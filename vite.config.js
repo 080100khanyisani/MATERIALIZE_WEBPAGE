@@ -20,7 +20,8 @@ import data from './data.json';
 // };
 
 export default {
+    base : '/responsive_cv/',   // <-- add this
     plugins: [handlebars({
-        context: data
-    })]
+        context : data   // add this
+    })],
 };

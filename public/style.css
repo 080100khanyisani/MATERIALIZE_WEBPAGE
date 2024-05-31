@@ -44,6 +44,11 @@
     font-size: x-large;
 }
 
+.discription{
+    margin-left: 300px;
+    margin-top: -170px;
+}
+
 
 @media (max-width: 600px) {
     .name-text{
@@ -70,4 +75,8 @@
         width: 100%;
     }
     
+    .discription {
+        margin-top: 40px;
+        margin-left: 1px;
+    }
 }
