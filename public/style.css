@@ -11,6 +11,10 @@
     
 }
 
+.container{
+    overflow-x: auto;
+}
+
 .city-name-text {
     font-size: x-large;
     font-weight: bold;
@@ -50,7 +54,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .name-text{
         text-align: center;
     }
@@ -65,10 +69,13 @@
 
     .contain{
         flex-direction: column;
+        flex: 1;
     }
 
     .box{
         width: 100%;
+        
+
     }
 
     .top-section{
@@ -80,3 +87,9 @@
         margin-left: 1px;
     }
 }
+
+/* @media (min-width: 1400px){
+    .box{
+        flex-direction: column;
+    }
+} */
