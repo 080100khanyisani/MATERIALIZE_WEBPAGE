@@ -11,7 +11,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
-<body>
+<body class="cyan accent-1">
     <div class="top-section">
         
         <div class="container">
@@ -29,21 +29,27 @@
 
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <p class="city-name-text">{{city.name}}</p>
+        <div class="indigo darken-4">
+
+            <div class="row">
+                <div class="col">
+                    <p class="city-name-text">{{city.name}}</p>
+                </div>
             </div>
         </div>
     </div>
 
 
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <img class="picture2" src="{{city.photo}}" alt="City picture">
-            </div>
-            <div class="col">
-                <p class="discription">{{city.description}}</p>
+        <div class="deep-purple">
+
+            <div class="row">
+                <div class="col">
+                    <img class="picture2" src="{{city.photo}}" alt="City picture">
+                </div>
+                <div class="col">
+                    <p class="discription">{{city.description}}</p>
+                </div>
             </div>
         </div>
 
@@ -58,43 +64,53 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <table class="table">
-                {{#each foreignLanguage.phrases}}
-                <tr>
-                    <td>{{englishPhrase}}</td>
-                    <td>{{foreignLanguage}}</td>
-                </tr>
-                {{/each}}
-            </table>
+        <div class="purple darken-1">
+
+            <div class="row">
+                <table class="table">
+                    {{#each foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
         </div>
     </div>
 
+    
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <p class="city-name-text">{{favouriteSubjects.title}}</p>
+        <div class="card-panel teal lighten-2">
+
+            <div class="row">
+                <div class="col">
+                    <p class="city-name-text">{{favouriteSubjects.title}}</p>
+                </div>
             </div>
         </div>
 
     </div>
 
     <!-- <div class="container"> -->
-        <div class="row">
+        <div class="deep-purple accent-1">
 
-            <div class="col">
-                
-                <div class="contain">
-        
-                    {{#each favouriteSubjects.subjects}}
-                    <div class="box">
-                        <div class="heading">
-                            <p>{{this.name}}</p>
+            <div class="row">
+    
+                <div class="col">
+                    
+                    <div class="contain">
+            
+                        {{#each favouriteSubjects.subjects}}
+                        <div class="box">
+                            <div class="heading">
+                                <p>{{this.name}}</p>
+                            </div>
+                            <img src="{{this.photo}}" alt="favourite-subject's pictures">
+                            <p>{{this.description}}</p>
                         </div>
-                        <img src="{{this.photo}}" alt="favourite-subject's pictures">
-                        <p>{{this.description}}</p>
+                        {{/each}}
                     </div>
-                    {{/each}}
                 </div>
             </div>
         </div>
